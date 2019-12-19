@@ -6,25 +6,28 @@
 
 ## Progress
 
-| **View** | **Status** |
-| **UIActivityIndicatorView** | ❌ |
-| **UIButton** | ✅ |
-| **UICollectionView** | ❌ |
-| **UIControl** | 🚧 |
-| **UIDatePicker** | ❌ |
-| **UIImageView** | ❌ |
-| **UILabel** | ✅ |
-| **UIPageControl** | ❌ |
-| **UIPickerView** | ❌ |
-| **UIProgressView** | ❌ |
-| **UIScrollView** | ❌ |
-| **UISearchTextField** | ❌ |
-| **UISegmentedControl** | ❌ |
-| **UISlider** | ❌ |
-| **UIStackView** | ✅ |
-| **UIStepper** | ❌ |
-| **UISwitch** | ❌ |
-| **UITableView** | ❌ |
-| **UITextField** | ✅ |
-| **UITextView** | ❌ |
-| **UIView** | 🚧 |
+
+
+| **View**                    | **Status** |
+| --------------------------- | ---------- |
+| **UIActivityIndicatorView** | ❌          |
+| **UIButton**                | ✅          |
+| **UICollectionView**        | ❌          |
+| **UIControl**               | 🚧          |
+| **UIDatePicker**            | ❌          |
+| **UIImageView**             | ❌          |
+| **UILabel**                 | ✅          |
+| **UIPageControl**           | ❌          |
+| **UIPickerView**            | ❌          |
+| **UIProgressView**          | ❌          |
+| **UIScrollView**            | ❌          |
+| **UISearchTextField**       | ❌          |
+| **UISegmentedControl**      | ❌          |
+| **UISlider**                | ❌          |
+| **UIStackView**             | ✅          |
+| **UIStepper**               | ❌          |
+| **UISwitch**                | ❌          |
+| **UITableView**             | ❌          |
+| **UITextField**             | ✅          |
+| **UITextView**              | ❌          |
+| **UIView**                  | 🚧          |
