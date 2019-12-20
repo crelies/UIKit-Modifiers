@@ -28,6 +28,12 @@ public extension UITableView {
         register(className, forCellReuseIdentifier: cellReuseIdentifier)
         return self
     }
+
+    func register(className: AnyClass) -> Self {
+        let cellReuseIdentifier = String(describing: className)
+        register(className, forCellReuseIdentifier: cellReuseIdentifier)
+        return self
+    }
 }
 
 // MARK: - Recycling Section Headers and Footers
