@@ -17,5 +17,10 @@ public extension UIView {
         self.tintColor = tintColor
         return self
     }
+
+    func backgroundColor(_ backgroundColor: UIColor) -> Self {
+        self.backgroundColor = backgroundColor
+        return self
+    }
 }
 #endif
