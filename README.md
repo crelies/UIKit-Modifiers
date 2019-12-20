@@ -2,32 +2,32 @@
 
 **SwiftUI**-like *modifiers* for many **UIKit** *views* and *controls* - syntactic sugar, nothing more ;)
 
+**Hint: *To avoid conflicts with existing functions I had to use a different function signature for some modifiers!***
+
 **⚠️ WIP!!!**
 
 ## Progress
 
-
-
 | **View**                    | **Status** |
 | --------------------------- | ---------- |
-| **UIActivityIndicatorView** | ❌          |
+| **UIActivityIndicatorView** | ✅          |
 | **UIButton**                | ✅          |
 | **UICollectionView**        | ❌          |
 | **UIControl**               | 🚧          |
-| **UIDatePicker**            | ❌          |
-| **UIImageView**             | ❌          |
+| **UIDatePicker**            | ✅          |
+| **UIImageView**             | ✅          |
 | **UILabel**                 | ✅          |
-| **UIPageControl**           | ❌          |
-| **UIPickerView**            | ❌          |
-| **UIProgressView**          | ❌          |
+| **UIPageControl**           | ✅          |
+| **UIPickerView**            | ✅          |
+| **UIProgressView**          | ✅          |
 | **UIScrollView**            | ❌          |
-| **UISearchTextField**       | ❌          |
-| **UISegmentedControl**      | ❌          |
-| **UISlider**                | ❌          |
+| **UISearchTextField**       | ✅          |
+| **UISegmentedControl**      | ✅          |
+| **UISlider**                | ✅          |
 | **UIStackView**             | ✅          |
-| **UIStepper**               | ❌          |
-| **UISwitch**                | ❌          |
-| **UITableView**             | ❌          |
+| **UIStepper**               | ✅          |
+| **UISwitch**                | ✅          |
+| **UITableView**             | ✅          |
 | **UITextField**             | ✅          |
-| **UITextView**              | ❌          |
+| **UITextView**              | ✅          |
 | **UIView**                  | 🚧          |

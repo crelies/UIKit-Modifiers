@@ -66,11 +66,6 @@ public extension UIButton {
         setImage(image, for: state)
         return self
     }
-
-    func tintColor(_ tintColor: UIColor) -> Self {
-        self.tintColor = tintColor
-        return self
-    }
 }
 
 // MARK: - Configuring Edge Insets

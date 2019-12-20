@@ -11,4 +11,9 @@ public extension UIView {
         isUserInteractionEnabled = value
         return self
     }
+
+    func tintColor(_ tintColor: UIColor) -> Self {
+        self.tintColor = tintColor
+        return self
+    }
 }
