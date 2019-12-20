@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Managing an Activity Indicator
@@ -31,3 +32,4 @@ public extension UIActivityIndicatorView {
         return self
     }
 }
+#endif

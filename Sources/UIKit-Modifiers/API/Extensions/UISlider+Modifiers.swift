@@ -1,7 +1,9 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Accessing the Slider’s Value
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISlider {
     func value(_ value: Float, animated: Bool) -> Self {
         setValue(value, animated: animated)
@@ -11,6 +13,7 @@ public extension UISlider {
 
 // MARK: - Accessing the Slider’s Value Limits
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISlider {
     func minimumValue(_ minimumValue: Float) -> Self {
         self.minimumValue = minimumValue
@@ -25,6 +28,7 @@ public extension UISlider {
 
 // MARK: - Modifying the Slider’s Behavior
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISlider {
     func continuous(_ value: Bool) -> Self {
         isContinuous = value
@@ -34,6 +38,7 @@ public extension UISlider {
 
 // MARK: - Changing the Slider’s Appearance
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISlider {
     func minimumValueImage(_ minimumValueImage: UIImage?) -> Self {
         self.minimumValueImage = minimumValueImage
@@ -75,3 +80,4 @@ public extension UISlider {
         return self
     }
 }
+#endif

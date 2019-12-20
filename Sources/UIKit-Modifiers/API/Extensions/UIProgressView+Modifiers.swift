@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Managing the Progress Bar
@@ -42,3 +43,4 @@ public extension UIProgressView {
         return self
     }
 }
+#endif

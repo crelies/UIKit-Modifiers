@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 @available(macOS 10.15, *)
@@ -17,3 +18,4 @@ public extension UIView {
         return self
     }
 }
+#endif

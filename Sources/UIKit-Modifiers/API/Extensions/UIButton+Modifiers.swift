@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Configuring the Button Title
@@ -52,6 +53,7 @@ public extension UIButton {
         return self
     }
 
+    @available(tvOS, unavailable)
     func showsTouchWhenHighlighted(_ value: Bool) -> Self {
         showsTouchWhenHighlighted = value
         return self
@@ -95,3 +97,4 @@ public extension UIButton {
         return self
     }
 }
+#endif

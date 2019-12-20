@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Managing the Page Navigation
@@ -37,3 +38,4 @@ public extension UIPageControl {
         return self
     }
 }
+#endif

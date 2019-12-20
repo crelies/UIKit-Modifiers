@@ -1,6 +1,8 @@
+#if canImport(UIKit)
 import UIKit
 
-@available(iOS 13, macOS 10.15, tvOS 13, *)
+#if !os(tvOS)
+@available(iOS 13, macOS 10.15, *)
 public extension UISearchTextField {
     func allowsCopyingTokens(_ allowsCopyingTokens: Bool) -> Self {
         self.allowsCopyingTokens = allowsCopyingTokens
@@ -23,7 +25,7 @@ public extension UISearchTextField {
     }
 }
 
-@available(iOS 13, macOS 10.15, tvOS 13, *)
+@available(iOS 13, macOS 10.15, *)
 public extension UISearchTextField {
     func insertToken(_ token: UISearchToken, atPosition position: Int) -> Self {
         insertToken(token, at: position)
@@ -40,3 +42,6 @@ public extension UISearchTextField {
         return self
     }
 }
+#endif
+
+#endif

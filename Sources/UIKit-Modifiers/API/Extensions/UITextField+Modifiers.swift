@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Validating and Handling Edits
@@ -179,3 +180,4 @@ public extension UITextField {
         return self
     }
 }
+#endif

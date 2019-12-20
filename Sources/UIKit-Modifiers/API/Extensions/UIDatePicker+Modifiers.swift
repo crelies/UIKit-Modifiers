@@ -1,7 +1,9 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Managing the Date and Calendar
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIDatePicker {
     func calendar(_ calendar: Calendar) -> Self {
         self.calendar = calendar
@@ -31,6 +33,7 @@ public extension UIDatePicker {
 
 // MARK: - Configuring the Date Picker Mode
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIDatePicker {
     func datePickerMode(_ mode: UIDatePicker.Mode) -> Self {
         datePickerMode = mode
@@ -40,6 +43,7 @@ public extension UIDatePicker {
 
 // MARK: - Configuring Temporal Attributes
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIDatePicker {
     func maximumDate(_ maximumDate: Date?) -> Self {
         self.maximumDate = maximumDate
@@ -61,3 +65,4 @@ public extension UIDatePicker {
         return self
     }
 }
+#endif

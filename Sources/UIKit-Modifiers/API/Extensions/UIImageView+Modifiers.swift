@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Accessing the Displayed Images
@@ -64,11 +65,6 @@ public extension UIImageView {
         return self
     }
 
-    func focusedFrameGuide(_ focusedFrameGuide: UILayoutGuide) -> Self {
-        self.focusedFrameGuide = focusedFrameGuide
-        return self
-    }
-
     @available(tvOS 11.0, *)
     func masksFocusEffectToContents(_ masksFocusEffectToContents: Bool) -> Self {
         self.masksFocusEffectToContents = masksFocusEffectToContents
@@ -85,3 +81,4 @@ public extension UIImageView {
         return self
     }
 }
+#endif

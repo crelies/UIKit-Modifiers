@@ -1,7 +1,9 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Configuring the Stepper
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIStepper {
     func isContinuous(_ isContinuous: Bool) -> Self {
         self.isContinuous = isContinuous
@@ -36,6 +38,7 @@ public extension UIStepper {
 
 // MARK: - Accessing the Stepper’s Value
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIStepper {
     func value(_ value: Double) -> Self {
         self.value = value
@@ -45,6 +48,7 @@ public extension UIStepper {
 
 // MARK: - Customizing Appearance
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIStepper {
     func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> Self {
         setBackgroundImage(image, for: state)
@@ -66,3 +70,4 @@ public extension UIStepper {
         return self
     }
 }
+#endif

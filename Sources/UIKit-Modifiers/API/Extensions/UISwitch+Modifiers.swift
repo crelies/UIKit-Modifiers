@@ -1,7 +1,9 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Setting the Off/On State
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISwitch {
     func on(_ value: Bool, animated: Bool) -> Self {
         setOn(value, animated: animated)
@@ -11,6 +13,7 @@ public extension UISwitch {
 
 // MARK: - Customizing the Appearance of the Switch
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UISwitch {
     func onTintColor(_ onTintColor: UIColor?) -> Self {
         self.onTintColor = onTintColor
@@ -32,3 +35,4 @@ public extension UISwitch {
         return self
     }
 }
+#endif

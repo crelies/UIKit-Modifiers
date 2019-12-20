@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Responding to Text View Changes
@@ -32,6 +33,7 @@ public extension UITextView {
         return self
     }
 
+    @available(tvOS, unavailable)
     func isEditable(_ isEditable: Bool) -> Self {
         self.isEditable = isEditable
         return self
@@ -42,6 +44,7 @@ public extension UITextView {
         return self
     }
 
+    @available(tvOS, unavailable)
     func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
         self.dataDetectorTypes = dataDetectorTypes
         return self
@@ -114,3 +117,4 @@ public extension UITextView {
         return self
     }
 }
+#endif

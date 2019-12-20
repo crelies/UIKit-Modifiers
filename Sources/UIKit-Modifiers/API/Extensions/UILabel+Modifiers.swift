@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Accessing the Text Attributes
@@ -114,4 +115,6 @@ public extension UILabel {
         return self
     }
 }
+#endif
+
 #endif

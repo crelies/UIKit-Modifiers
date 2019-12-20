@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Managing Segment Content
@@ -104,3 +105,4 @@ public extension UISegmentedControl {
         return self
     }
 }
+#endif

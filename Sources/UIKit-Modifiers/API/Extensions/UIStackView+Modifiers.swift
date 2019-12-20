@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Configuring The Layout
@@ -35,10 +36,11 @@ public extension UIStackView {
 }
 
 // MARK: - Adding Space Between Items
-@available(macOS 10.15, *)
+@available(iOS 11, macOS 10.15, tvOS 11, *)
 public extension UIStackView {
     func customSpacing(_ spacing: CGFloat, after view: UIView) -> Self {
         setCustomSpacing(spacing, after: view)
         return self
     }
 }
+#endif

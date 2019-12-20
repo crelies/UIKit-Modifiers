@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Providing the Table's Data and Cells
@@ -8,6 +9,7 @@ public extension UITableView {
         return self
     }
 
+    @available(iOS 10, tvOS 10, *)
     func prefetchDataSource(_ prefetchDataSource: UITableViewDataSourcePrefetching?) -> Self {
         self.prefetchDataSource = prefetchDataSource
         return self
@@ -88,6 +90,7 @@ public extension UITableView {
         return self
     }
 
+    @available(iOS 11, tvOS 11, *)
     func insetsContentViewsToSafeArea(_ insetsContentViewsToSafeArea: Bool) -> Self {
         self.insetsContentViewsToSafeArea = insetsContentViewsToSafeArea
         return self
@@ -121,16 +124,19 @@ public extension UITableView {
 // MARK: - Customizing the Separator Appearance
 @available(macOS 10.15, *)
 public extension UITableView {
+    @available(tvOS, unavailable)
     func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> Self {
         self.separatorStyle = separatorStyle
         return self
     }
 
+    @available(tvOS, unavailable)
     func separatorColor(_ separatorColor: UIColor?) -> Self {
         self.separatorColor = separatorColor
         return self
     }
 
+    @available(tvOS, unavailable)
     func separatorEffect(_ separatorEffect: UIVisualEffect?) -> Self {
         self.separatorEffect = separatorEffect
         return self
@@ -217,7 +223,7 @@ public extension UITableView {
 }
 
 // MARK: - Performing Batch Updates to Rows and Sections
-@available(macOS 10.15, *)
+@available(iOS 11, macOS 10.15, tvOS 11.0, *)
 public extension UITableView {
     func performBatch(updates: (() -> Void)?, completion: ((Bool) -> Void)?) -> Self {
         performBatchUpdates(updates, completion: completion)
@@ -274,7 +280,9 @@ public extension UITableView {
 }
 
 // MARK: - Managing Drag Interactions
+@available(iOS 11, *)
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UITableView {
     func dragDelegate(_ dragDelegate: UITableViewDragDelegate?) -> Self {
         self.dragDelegate = dragDelegate
@@ -288,7 +296,9 @@ public extension UITableView {
 }
 
 // MARK: - Managing Drop Interactions
+@available(iOS 11, *)
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UITableView {
     func dropDelegate(_ dropDelegate: UITableViewDropDelegate?) -> Self {
         self.dropDelegate = dropDelegate
@@ -327,3 +337,4 @@ public extension UITableView {
         return self
     }
 }
+#endif
