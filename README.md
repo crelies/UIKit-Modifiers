@@ -17,7 +17,7 @@
 | --------------------------- | ---------- |
 | **UIActivityIndicatorView** | ✅          |
 | **UIButton**                | ✅          |
-| **UICollectionView**        | ❌          |
+| **UICollectionView**        | ✅          |
 | **UIControl**               | ✅          |
 | **UIDatePicker**            | ✅          |
 | **UIImageView**             | ✅          |
@@ -25,7 +25,7 @@
 | **UIPageControl**           | ✅          |
 | **UIPickerView**            | ✅          |
 | **UIProgressView**          | ✅          |
-| **UIScrollView**            | ❌          |
+| **UIScrollView**            | ✅          |
 | **UISearchTextField**       | ✅          |
 | **UISegmentedControl**      | ✅          |
 | **UISlider**                | ✅          |
