@@ -35,7 +35,7 @@
 | **UITableView**             | ✅          |
 | **UITextField**             | ✅          |
 | **UITextView**              | ✅          |
-| **UIView**                  | 🚧          |
+| **UIView**                  | ✅          |
 
 ## TODO
 
