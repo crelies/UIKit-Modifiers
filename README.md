@@ -18,7 +18,7 @@
 | **UIActivityIndicatorView** | ✅          |
 | **UIButton**                | ✅          |
 | **UICollectionView**        | ❌          |
-| **UIControl**               | 🚧          |
+| **UIControl**               | ✅          |
 | **UIDatePicker**            | ✅          |
 | **UIImageView**             | ✅          |
 | **UILabel**                 | ✅          |
