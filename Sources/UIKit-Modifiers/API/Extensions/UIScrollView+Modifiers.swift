@@ -38,6 +38,7 @@ public extension UIScrollView {
     }
 
     @available(iOS 11.0, *)
+    @available(tvOS 11.0, *)
     func contentInsetAdjustmentBehavior(_ contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior) -> Self {
         self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior
         return self
@@ -57,11 +58,13 @@ public extension UIScrollView {
         return self
     }
 
+    @available(tvOS, unavailable)
     func isPagingEnabled(_ isPagingEnabled: Bool) -> Self {
         self.isPagingEnabled = isPagingEnabled
         return self
     }
 
+    @available(tvOS, unavailable)
     func scrollsToTop(_ scrollsToTop: Bool) -> Self {
         self.scrollsToTop = scrollsToTop
         return self
@@ -121,6 +124,7 @@ public extension UIScrollView {
     }
 
     @available(iOS 10.0, *)
+    @available(tvOS, unavailable)
     func refreshControl(_ refreshControl: UIRefreshControl?) -> Self {
         self.refreshControl = refreshControl
         return self
@@ -195,6 +199,7 @@ public extension UIScrollView {
 
 // MARK: - Managing the Index
 @available(macOS 10.15, *)
+@available(tvOS 10.2, *)
 public extension UIScrollView {
     func indexDisplayMode(_ indexDisplayMode: UIScrollView.IndexDisplayMode) -> Self {
         self.indexDisplayMode = indexDisplayMode
@@ -206,18 +211,21 @@ public extension UIScrollView {
 @available(macOS 10.15, *)
 public extension UIScrollView {
     @available(iOS 13.0, *)
+    @available(tvOS 13.0, *)
     func automaticallyAdjustsScrollIndicatorInsets(_ automaticallyAdjustsScrollIndicatorInsets: Bool) -> Self {
         self.automaticallyAdjustsScrollIndicatorInsets = automaticallyAdjustsScrollIndicatorInsets
         return self
     }
 
     @available(iOS 11.1, *)
+    @available(tvOS 11.1, *)
     func horizontalScrollIndicatorInsets(_ horizontalScrollIndicatorInsets: UIEdgeInsets) -> Self {
         self.horizontalScrollIndicatorInsets = horizontalScrollIndicatorInsets
         return self
     }
 
     @available(iOS 11.1, *)
+    @available(tvOS 11.1, *)
     func verticalScrollIndicatorInsets(_ verticalScrollIndicatorInsets: UIEdgeInsets) -> Self {
         self.verticalScrollIndicatorInsets = verticalScrollIndicatorInsets
         return self

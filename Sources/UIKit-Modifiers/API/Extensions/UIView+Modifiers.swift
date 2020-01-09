@@ -58,11 +58,13 @@ public extension UIView {
         return self
     }
 
+    @available(tvOS, unavailable)
     func isMultipleTouchEnabled(_ isMultipleTouchEnabled: Bool) -> Self {
         self.isMultipleTouchEnabled = isMultipleTouchEnabled
         return self
     }
 
+    @available(tvOS, unavailable)
     func isExclusiveTouch(_ isExclusiveTouch: Bool) -> Self {
         self.isExclusiveTouch = isExclusiveTouch
         return self
@@ -141,6 +143,7 @@ public extension UIView {
 @available(macOS 10.15, *)
 public extension UIView {
     @available(iOS 11.0, *)
+    @available(tvOS 11.0, *)
     func directionalLayoutMargins(_ directionalLayoutMargins: NSDirectionalEdgeInsets) -> Self {
         self.directionalLayoutMargins = directionalLayoutMargins
         return self
@@ -160,6 +163,7 @@ public extension UIView {
 // MARK: - Getting the Safe Area
 @available(iOS 11.0, *)
 @available(macOS 10.15, *)
+@available(tvOS 11.0, *)
 public extension UIView {
     func insetsLayoutMarginsFromSafeArea(_ insetsLayoutMarginsFromSafeArea: Bool) -> Self {
         self.insetsLayoutMarginsFromSafeArea = insetsLayoutMarginsFromSafeArea
@@ -304,6 +308,7 @@ public extension UIView {
 @available(macOS 10.15, *)
 public extension UIView {
     @available(iOS 13.0, *)
+    @available(tvOS 13.0, *)
     func overrideUserInterfaceStyle(_ overrideUserInterfaceStyle: UIUserInterfaceStyle) -> Self {
         self.overrideUserInterfaceStyle = overrideUserInterfaceStyle
         return self
@@ -318,6 +323,7 @@ public extension UIView {
 // MARK: - Adding and Removing Interactions
 @available(iOS 11.0, *)
 @available(macOS 10.15, *)
+@available(tvOS 13.0, *)
 public extension UIView {
     func addInteraction(interaction: UIInteraction) -> Self {
         addInteraction(interaction)
@@ -361,6 +367,7 @@ public extension UIView {
 
 // MARK: - Formatting Printed View Content
 @available(macOS 10.15, *)
+@available(tvOS, unavailable)
 public extension UIView {
     func draw(inRect rect: CGRect, for printFormatter: UIViewPrintFormatter) -> Self {
         draw(rect, for: printFormatter)
@@ -437,6 +444,7 @@ public extension UIView {
 // MARK: - Modifying the Accessibility Behavior
 @available(iOS 11.0, *)
 @available(macOS 10.15, *)
+@available(tvOS 11.0, *)
 public extension UIView {
     func accessibilityIgnoresInvertColors(_ accessibilityIgnoresInvertColors: Bool) -> Self {
         self.accessibilityIgnoresInvertColors = accessibilityIgnoresInvertColors
@@ -448,6 +456,7 @@ public extension UIView {
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public extension UIView {
+    #if !os(tvOS)
     func largeContentImage(_ largeContentImage: UIImage?) -> Self {
         self.largeContentImage = largeContentImage
         return self
@@ -472,7 +481,9 @@ public extension UIView {
         self.showsLargeContentViewer = showsLargeContentViewer
         return self
     }
+    #endif
 
+    @available(tvOS 12.0, *)
     func transform3D(_ transform3D: CATransform3D) -> Self {
         self.transform3D = transform3D
         return self
