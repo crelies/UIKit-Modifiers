@@ -27,6 +27,7 @@ public extension UITextField {
     }
 
     @available(iOS 10, *)
+    @available(tvOS 10.0, *)
     func textContentType(_ textContentType: UITextContentType) -> Self {
         self.textContentType = textContentType
         return self
@@ -69,6 +70,7 @@ public extension UITextField {
 // MARK: - Configuring the Auto-Formatting Behaviors
 @available(iOS 11.0, *)
 @available(macOS 10.15, *)
+@available(tvOS 11.0, *)
 public extension UITextField {
     func smartQuotesType(_ smartQuotesType: UITextSmartQuotesType) -> Self {
         self.smartQuotesType = smartQuotesType
