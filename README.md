@@ -77,7 +77,3 @@ Add this **Swift package** as a dependency to your *Package.swift*
 ```swift
 .package(url: "https://github.com/crelies/UIKit-Modifiers.git", from: "0.1.0")
 ```
-
-## TODO
-
-- watchOS support
