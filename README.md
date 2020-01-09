@@ -13,6 +13,8 @@
 
 ## Modifiers available for
 
+The modifiers are added through *Extensions* to the views / controls.
+
 | **View**                          | **Status** |
 | --------------------------------- | ---------- |
 | **UIActivityIndicatorView**       | ✅          |

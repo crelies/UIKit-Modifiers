@@ -27,7 +27,7 @@ public extension UIActivityIndicatorView {
         return self
     }
 
-    func color(_ color: UIColor!) -> Self {
+    func color(_ color: UIColor) -> Self {
         self.color = color
         return self
     }

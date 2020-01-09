@@ -14,7 +14,7 @@ public extension UISearchTextField {
         return self
     }
 
-    func tokenBackgroundColor(_ tokenBackgroundColor: UIColor!) -> Self {
+    func tokenBackgroundColor(_ tokenBackgroundColor: UIColor) -> Self {
         self.tokenBackgroundColor = tokenBackgroundColor
         return self
     }
