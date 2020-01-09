@@ -60,11 +60,11 @@ With this *Swift package* you can use *SwiftUI-like* **modifiers**
 ```swift
 var textField: UITextField = {
     UITextField()
-				.translatesAutoresizingMaskIntoConstraints(false)
-				.placeholder("Username")
-				.textColor(.systemBlue)
-				.font(.systemFont(ofSize: 17, weight: .semibold))
-				.textContentType(.username)
+      .translatesAutoresizingMaskIntoConstraints(false)
+      .placeholder("Username")
+      .textColor(.systemBlue)
+      .font(.systemFont(ofSize: 17, weight: .semibold))
+      .textContentType(.username)
 }()
 ```
 
