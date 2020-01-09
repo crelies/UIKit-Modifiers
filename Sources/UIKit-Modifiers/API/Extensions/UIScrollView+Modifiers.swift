@@ -37,6 +37,7 @@ public extension UIScrollView {
         return self
     }
 
+    @available(iOS 11.0, *)
     func contentInsetAdjustmentBehavior(_ contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior) -> Self {
         self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior
         return self
@@ -119,6 +120,7 @@ public extension UIScrollView {
         return self
     }
 
+    @available(iOS 10.0, *)
     func refreshControl(_ refreshControl: UIRefreshControl?) -> Self {
         self.refreshControl = refreshControl
         return self
@@ -203,16 +205,19 @@ public extension UIScrollView {
 // MARK: - More stuff
 @available(macOS 10.15, *)
 public extension UIScrollView {
+    @available(iOS 13.0, *)
     func automaticallyAdjustsScrollIndicatorInsets(_ automaticallyAdjustsScrollIndicatorInsets: Bool) -> Self {
         self.automaticallyAdjustsScrollIndicatorInsets = automaticallyAdjustsScrollIndicatorInsets
         return self
     }
 
+    @available(iOS 11.1, *)
     func horizontalScrollIndicatorInsets(_ horizontalScrollIndicatorInsets: UIEdgeInsets) -> Self {
         self.horizontalScrollIndicatorInsets = horizontalScrollIndicatorInsets
         return self
     }
 
+    @available(iOS 11.1, *)
     func verticalScrollIndicatorInsets(_ verticalScrollIndicatorInsets: UIEdgeInsets) -> Self {
         self.verticalScrollIndicatorInsets = verticalScrollIndicatorInsets
         return self

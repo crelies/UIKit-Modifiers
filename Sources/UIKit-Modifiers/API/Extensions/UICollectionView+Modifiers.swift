@@ -29,6 +29,7 @@ public extension UICollectionView {
 }
 
 // MARK: - Prefetching Collection View Cells and Data
+@available(iOS 10.0, *)
 @available(macOS 10.15, *)
 public extension UICollectionView {
     func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool) -> Self {
@@ -153,6 +154,7 @@ public extension UICollectionView {
 }
 
 // MARK: - Managing Drag Interactions
+@available(iOS 11.0, *)
 @available(macOS 10.15, *)
 public extension UICollectionView {
     func dragDelegate(_ dragDelegate: UICollectionViewDragDelegate?) -> Self {
@@ -167,6 +169,7 @@ public extension UICollectionView {
 }
 
 // MARK: - Managing Drop Interactions
+@available(iOS 11.0, *)
 @available(macOS 10.15, *)
 public extension UICollectionView {
     func dropDelegate(_ dropDelegate: UICollectionViewDropDelegate?) -> Self {

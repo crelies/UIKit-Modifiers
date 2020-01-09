@@ -435,6 +435,7 @@ public extension UIView {
 }
 
 // MARK: - Modifying the Accessibility Behavior
+@available(iOS 11.0, *)
 @available(macOS 10.15, *)
 public extension UIView {
     func accessibilityIgnoresInvertColors(_ accessibilityIgnoresInvertColors: Bool) -> Self {
