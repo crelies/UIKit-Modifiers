@@ -328,6 +328,11 @@ public extension UIView {
         removeInteraction(interaction)
         return self
     }
+
+    func interactions(_ interactions: [UIInteraction]) -> Self {
+        self.interactions = interactions
+        return self
+    }
 }
 
 // MARK: - Drawing and Updating the View
@@ -350,6 +355,15 @@ public extension UIView {
 
     func contentScaleFactor(_ contentScaleFactor: CGFloat) -> Self {
         self.contentScaleFactor = contentScaleFactor
+        return self
+    }
+}
+
+// MARK: - Formatting Printed View Content
+@available(macOS 10.15, *)
+public extension UIView {
+    func draw(inRect rect: CGRect, for printFormatter: UIViewPrintFormatter) -> Self {
+        draw(rect, for: printFormatter)
         return self
     }
 }
@@ -416,6 +430,15 @@ public extension UIView {
 public extension UIView {
     func tag(_ tag: Int) -> Self {
         self.tag = tag
+        return self
+    }
+}
+
+// MARK: - Modifying the Accessibility Behavior
+@available(macOS 10.15, *)
+public extension UIView {
+    func accessibilityIgnoresInvertColors(_ accessibilityIgnoresInvertColors: Bool) -> Self {
+        self.accessibilityIgnoresInvertColors = accessibilityIgnoresInvertColors
         return self
     }
 }
